@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowserParallel">
+    <test name="teston chrome">
+    <parameter name="Browser" value="Chrome"></parameter>
+        <parameter name="version" value="103.0"></parameter>
+        <parameter name="platform" value="windows10"></parameter>
+    <classes>
+    <class name="SelenuimE2E.CreateNewProfile"></class>
+        <class name="SelenuimE2E.AddToCart"></class>
+    </classes>
+    </test>
+    <test name="test on edge">
+    <parameter name="Browser" value="Edge"></parameter>
+        <parameter name="version" value="103.0"></parameter>
+        <parameter name="platform" value="windows10"></parameter>
+    <classes>
+        <class name="SelenuimE2E.CreateNewProfile"></class>
+        <class name="SelenuimE2E.AddToCart"></class>
+    </classes>
+    </test>
+    <test name="test on FireFox">
+        <parameter name="Browser" value="fireFox"></parameter>
+        <parameter name="version" value="103.0"></parameter>
+        <parameter name="platform" value="windows10"></parameter>
+        <classes>
+            <class name="SelenuimE2E.CreateNewProfile"></class>
+            <class name="SelenuimE2E.AddToCart"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Paramerters Suite">
+    <parameter name="URL" value="https://www.lambdatest.com/selenium-playground/"/>
+    <test name="PassParameterTest">
+        <parameter name="TestResult" value="Pass"></parameter>
+        <parameter name="Tasks" value='Downlowd File'></parameter>
+        <classes>
+            <class name="DemotestNG.ParametreziedTest"/>
+        </classes>
+    </test>
+    <test name="FailParameterTest">
+        <parameter name="TestResult" value="Fail"></parameter>
+        <parameter name="Tasks" value='Downlowd File'></parameter>
+        <classes>
+            <class name="DemotestNG.ParametreziedTest"/>
+        </classes>
+    </test>
+    <test name="SkipParameterTest">
+        <parameter name="TestResult" value="Skip"></parameter>
+        <parameter name="Tasks" value='Downlowd File'></parameter>
+        <classes>
+            <class name="DemotestNG.ParametreziedTest"/>
+        </classes>    </test>
+</suite>
